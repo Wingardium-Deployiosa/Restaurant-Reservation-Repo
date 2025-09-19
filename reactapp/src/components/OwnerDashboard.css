@@ -1,0 +1,251 @@
+.owner-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.owner-dashboard h2 {
+  color: #282c3f;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.restaurant-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-card h3 {
+  color: #282c3f;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.restaurant-card p {
+  color: #7e808c;
+  font-size: 14px;
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+.reservations-section {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+}
+
+.section-title {
+  color: #282c3f;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #fc8019;
+}
+
+.reservations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.reservation-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(40, 44, 63, 0.12);
+  border: 1px solid #e9e9eb;
+  transition: all 0.3s ease;
+  height: 100%;
+  padding: 20px;
+}
+
+.reservation-card:hover {
+  box-shadow: 0 8px 30px rgba(40, 44, 63, 0.12);
+  transform: translateY(-4px);
+}
+
+.reservation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.reservation-header h4 {
+  color: #282c3f;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-pending {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.status-confirmed {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status-cancelled {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.reservation-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #535665;
+}
+
+.detail-row .icon {
+  font-size: 16px;
+  width: 20px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #7e808c;
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.empty-state p {
+  font-size: 16px;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .owner-dashboard {
+    padding: 16px;
+  }
+  
+  .restaurant-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .reservations-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .owner-dashboard {
+    padding: 12px;
+  }
+  
+  .owner-dashboard h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  
+  .restaurant-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .reservations-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .reservations-section {
+    padding: 24px 20px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .reservation-card {
+    padding: 16px;
+  }
+  
+  .reservation-header h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .owner-dashboard {
+    padding: 8px;
+  }
+  
+  .owner-dashboard h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .reservations-section {
+    padding: 20px 16px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+  }
+  
+  .reservation-card {
+    padding: 14px;
+  }
+  
+  .detail-row {
+    font-size: 13px;
+  }
+  
+  .status-badge {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+}

@@ -1,0 +1,291 @@
+
+.admin-panel {
+  min-height: 100vh;
+  background: #f7f8fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-header {
+  background: linear-gradient(135deg, #fc8019 0%, #ff6900 100%);
+  color: white;
+  padding: 24px 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 16px rgba(252, 128, 25, 0.2);
+}
+
+.admin-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.admin-header p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin: 0;
+  font-weight: 400;
+}
+
+.admin-content {
+  background: white;
+  margin: 0 32px 24px 32px;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9e9eb;
+}
+
+.admin-nav {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding: 0 32px;
+}
+
+.admin-nav-btn {
+  background: white;
+  color: #282c3f;
+  border: 2px solid #e9e9eb;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.admin-nav-btn:hover {
+  border-color: #fc8019;
+  color: #fc8019;
+}
+
+.admin-nav-btn.active {
+  background: #fc8019;
+  color: white;
+  border-color: #fc8019;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 16px 12px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f5;
+}
+
+.admin-table th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #282c3f;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+ .admin-table td {
+  color: #535665;
+  font-size: 14px;
+} 
+
+.admin-btn {
+  background: #fc8019;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+.admin-btn:hover {
+  background: #e8730f;
+  transform: translateY(-1px);
+}
+
+.admin-btn.danger {
+  background: #e23744;
+}
+
+.admin-btn.danger:hover {
+  background: #d32f2f;
+}
+
+
+.add-restaurant-form {
+  max-width: 100%;
+}
+
+.add-restaurant-form h3 {
+  color: #282c3f;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f0f0f5;
+}
+
+.add-restaurant-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.add-restaurant-form input {
+  padding: 14px 16px;
+  border: 2px solid #e9e9eb;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #282c3f;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.add-restaurant-form input:focus {
+  outline: none;
+  border-color: #fc8019;
+  box-shadow: 0 0 0 3px rgba(252, 128, 25, 0.1);
+}
+
+.add-restaurant-form input::placeholder {
+  color: #93959f;
+  font-weight: 400;
+}
+
+.add-restaurant-form button {
+  grid-column: 1 / -1;
+  background: #fc8019;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.add-restaurant-form button:hover {
+  background: #e8730f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(252, 128, 25, 0.3);
+}
+
+.error-message {
+  grid-column: 1 / -1;
+  color: #e23744;
+  background: #ffeaea;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border-left: 4px solid #e23744;
+  margin-top: 16px;
+  font-size: 14px;
+}
+  
+@media (max-width: 1024px) {
+  .admin-content {
+    margin: 0 24px 20px 24px;
+    padding: 28px;
+  }
+  
+  .admin-nav {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    padding: 20px 16px;
+  }
+  
+  .admin-header h2 {
+    font-size: 24px;
+  }
+  
+  .admin-content {
+    margin: 0 16px 16px 16px;
+    padding: 20px;
+  }
+  
+  .admin-nav {
+    padding: 0 16px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .admin-nav-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .admin-table {
+    font-size: 12px;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    padding: 10px 6px;
+    min-width: 80px;
+  }
+  
+  .add-restaurant-form form {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .add-restaurant-form input {
+    padding: 12px 14px;
+    font-size: 16px;
+  }
+  
+  .add-restaurant-form h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-header {
+    padding: 16px 12px;
+  }
+  
+  .admin-header h2 {
+    font-size: 20px;
+  }
+  
+  .admin-content {
+    margin: 0 12px 12px 12px;
+    padding: 16px;
+  }
+  
+  .admin-nav {
+    padding: 0 12px;
+  }
+  
+  .admin-nav-btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+  
+  .add-restaurant-form input {
+    padding: 10px 12px;
+  }
+  
+  .add-restaurant-form button {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+}
+

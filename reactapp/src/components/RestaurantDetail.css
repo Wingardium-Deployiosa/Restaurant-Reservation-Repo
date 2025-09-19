@@ -1,0 +1,125 @@
+.detail-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.detail-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.restaurant-detail-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding: 40px 0;
+}
+
+.restaurant-hero {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 32px;
+  box-shadow: 0 8px 30px rgba(40, 44, 63, 0.12);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.restaurant-image-placeholder {
+  width: 200px;
+  height: 150px;
+  background: linear-gradient(135deg, #fc8019 0%, #ff6900 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 48px;
+}
+
+.restaurant-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #282c3f;
+  margin: 0 0 16px 0;
+}
+
+.restaurant-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.cuisine-tag {
+  background: #fc8019;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rating {
+  background: #48c479;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.delivery-time {
+  color: #7e808c;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.restaurant-address, .restaurant-hours {
+  color: #7e808c;
+  font-size: 16px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.restaurant-address i, .restaurant-hours i {
+  color: #fc8019;
+  width: 16px;
+}
+
+.reservation-section {
+  margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+  .restaurant-detail-page {
+    padding: 20px 0;
+  }
+  
+  .restaurant-hero {
+    grid-template-columns: 1fr;
+    padding: 24px;
+    text-align: center;
+  }
+  
+  .restaurant-image-placeholder {
+    width: 150px;
+    height: 120px;
+    margin: 0 auto;
+    font-size: 36px;
+  }
+  
+  .restaurant-title {
+    font-size: 24px;
+  }
+}
